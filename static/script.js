@@ -73,8 +73,8 @@ function applyResponsiveStyles() {
         skills.style.flexDirection = 'column';
 
         document.querySelectorAll('.skill').forEach(skill => {
-            skill.style.width = '80px';
-            skill.style.margin = '5px 0';
+            skill.style.width = '100px';
+            skill.style.margin = '10px auto';
         });
 
         document.querySelectorAll('.skill img').forEach(img => {
@@ -86,17 +86,19 @@ function applyResponsiveStyles() {
         projects.style.flexDirection = 'column';
 
         document.querySelectorAll('.project').forEach(project => {
-            project.style.width = '90%';
-            project.style.margin = '10px auto';
+            project.style.width = '100%';
+            project.style.margin = '10px 0';
         });
 
         document.querySelectorAll('.project-body').forEach(projectBody => {
             projectBody.style.flexDirection = 'column';
+            projectBody.style.alignItems = 'center';
         });
 
         document.querySelectorAll('.project img').forEach(img => {
-            img.style.width = '80px';
-            img.style.margin = '10px auto';
+            img.style.width = '100px';
+            img.style.height = 'auto';
+            img.style.margin = '10px 0';
         });
 
         document.querySelectorAll('.social-icon').forEach(icon => {
