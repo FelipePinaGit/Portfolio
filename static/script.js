@@ -84,10 +84,12 @@ function applyResponsiveStyles() {
 
         const projects = document.querySelector('.projects');
         projects.style.flexDirection = 'column';
+        projects.style.alignItems = 'center';
 
         document.querySelectorAll('.project').forEach(project => {
-            project.style.width = '100%';
+            project.style.width = '90%'; // Cambié a 90%
             project.style.margin = '10px 0';
+            project.style.maxWidth = '400px'; // Agregué un max-width
         });
 
         document.querySelectorAll('.project-body').forEach(projectBody => {
@@ -163,5 +165,3 @@ function applyResponsiveStyles() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", applyResponsiveStyles);
-window.addEventListener('resize', applyResponsiveStyles);
