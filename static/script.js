@@ -73,13 +73,13 @@ function applyResponsiveStyles() {
         skills.style.flexDirection = 'column';
 
         document.querySelectorAll('.skill').forEach(skill => {
-            skill.style.width = '100px';
+            skill.style.width = '80px';
             skill.style.margin = '10px auto';
         });
 
         document.querySelectorAll('.skill img').forEach(img => {
-            img.style.width = '50px';
-            img.style.height = '50px';
+            img.style.width = '40px';
+            img.style.height = '40px';
         });
 
         const projects = document.querySelector('.projects');
