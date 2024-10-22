@@ -53,7 +53,7 @@ function applyResponsiveStyles() {
         document.querySelector('header').style.padding = '10px 20px';
         document.querySelector('header').style.fontSize = '16px';
         document.querySelector('.menu-icon').style.fontSize = '24px';
-        
+
         document.querySelector('.container').style.padding = '10px';
         document.querySelector('.container').style.margin = '10px auto';
         document.querySelector('.container').style.maxWidth = '95%';
@@ -71,18 +71,23 @@ function applyResponsiveStyles() {
 
         const skills = document.querySelector('.skills');
         skills.style.flexDirection = 'column';
-        
-        const projects = document.querySelector('.projects');
-        projects.style.flexDirection = 'column';
-        
+
         document.querySelectorAll('.skill').forEach(skill => {
-            skill.style.width = '100%';
-            skill.style.margin = '10px 0';
+            skill.style.width = '80px';
+            skill.style.margin = '5px 0';
         });
 
+        document.querySelectorAll('.skill img').forEach(img => {
+            img.style.width = '50px';
+            img.style.height = '50px';
+        });
+
+        const projects = document.querySelector('.projects');
+        projects.style.flexDirection = 'column';
+
         document.querySelectorAll('.project').forEach(project => {
-            project.style.width = '100%';
-            project.style.margin = '10px 0';
+            project.style.width = '90%';
+            project.style.margin = '10px auto';
         });
 
         document.querySelectorAll('.project-body').forEach(projectBody => {
@@ -90,8 +95,8 @@ function applyResponsiveStyles() {
         });
 
         document.querySelectorAll('.project img').forEach(img => {
-            img.style.width = '100px';
-            img.style.margin = '0 auto';
+            img.style.width = '80px';
+            img.style.margin = '10px auto';
         });
 
         document.querySelectorAll('.social-icon').forEach(icon => {
@@ -122,13 +127,18 @@ function applyResponsiveStyles() {
         const skills = document.querySelector('.skills');
         skills.style.flexDirection = 'row';
 
-        const projects = document.querySelector('.projects');
-        projects.style.flexDirection = 'row';
-
         document.querySelectorAll('.skill').forEach(skill => {
             skill.style.width = '150px';
             skill.style.margin = '20px';
         });
+
+        document.querySelectorAll('.skill img').forEach(img => {
+            img.style.width = '100px';  
+            img.style.height = '100px';
+        });
+
+        const projects = document.querySelector('.projects');
+        projects.style.flexDirection = 'row';
 
         document.querySelectorAll('.project').forEach(project => {
             project.style.width = '700px';
