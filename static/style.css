@@ -319,3 +319,116 @@ section#contact {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 15px 20px;
+        text-align: left;
+    }
+
+    .menu-icon {
+        font-size: 24px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .container {
+        padding: 15px 10px;
+        margin: 15px auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo img {
+        width: 150px;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .about-text h3 {
+        font-size: 20px;
+    }
+
+    section#about h2,
+    section#skills h2,
+    section#projects h2,
+    section#contact h2 {
+        font-size: 24px;
+    }
+
+    .skills {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .skill {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project img {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .contact-form {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        font-size: 20px;
+    }
+
+    .about-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-text h3 {
+        font-size: 18px;
+    }
+
+    section#about h2,
+    section#skills h2,
+    section#projects h2,
+    section#contact h2 {
+        font-size: 20px;
+    }
+
+    .project img {
+        width: 60px;
+        margin-right: 8px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+}
