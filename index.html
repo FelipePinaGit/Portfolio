@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
     <title>Portfolio</title>
 </head>
@@ -28,14 +31,28 @@
                     <img src="static/imagenes/mi foto.jpg" alt="Mi foto">
                 </div>
                 <div class="about-text">
-                    <h3>Soy Felipe Piña, un desarrollador junior full stack con práctica en metodologías ágiles como Scrum, Kanban y XP. Cuento con habilidades en desarrollo web tanto del lado del cliente como del servidor, con un interés particular en especializarme más en el back end. Además, poseo conocimientos básicos en sistemas operativos y arquitectura de computadoras. Estoy motivado para contribuir a proyectos innovadores y seguir aprendiendo en el campo del desarrollo.</h3>
-
+                    <h3>¡Hola! Soy Felipe Piña</h3>
+                    <div class="about-section">
+                        <div class="section">
+                            <h4>¿Quién soy?</h4>
+                            <p>Soy un desarrollador junior full stack con un enfoque creciente en el desarrollo back-end. Actualmente estoy aprendiendo y mejorando mis habilidades en programación y arquitectura de software.</p>
+                        </div>
+                        <div class="section">
+                            <h4>Mis Habilidades</h4>
+                            <p>Tengo habilidades en desarrollo web tanto del lado del cliente como del servidor, con un interés particular en especializarme más en el back end. Poseo conocimientos básicos en sistemas operativos y arquitectura de computadoras.</p>
+                        </div>
+                        <div class="section">
+                            <h4>Mis Pasiones</h4>
+                            <p>Me apasiona la tecnología, en especial la inteligencia artificial y los chatbots. En mi tiempo libre, disfruto explorar nuevas herramientas de desarrollo y mejorar mis proyectos personales.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+
         <section id="skills">
-            <h2>Habilidades</h2>
+            <h2>Conocimientos</h2>
             <div class="skills">
                 <div class="skill">
                     <img src="static/imagenes/python.png" alt="Python">
@@ -80,7 +97,7 @@
             <div class="projects">
                 <div class="project">
                     <div class="project-body">
-                        <img src="static/imagenes/logo-pizza.png" alt="PizzeriaArgento">
+                        <img src="static/imagenes/logo-pizza .png" alt="PizzeriaArgento">
                         <div class="project-content">
                             <h3>PizzeriaArgento</h3>
                             <p>Pizza Argento es una plataforma de delivery con un menú interactivo y pedidos rápidos, desarrollada con Flask y HTML/CSS. Permite a los administradores gestionar el catálogo y los pedidos en tiempo real.</p>
@@ -93,7 +110,7 @@
                     <div class="project-body">
                         <img src="static/imagenes/dengue.png" alt="Caso Dengue">
                         <div class="project-content">
-                            <h3>Dengue</h3>
+                            <h3>Caso Dengue</h3>
                             <p>Esta aplicación gestiona casos de dengue en San Carlos, clasificándolos por tipo (A, B o C) y almacenando la información de forma eficiente. Desarrollada con Flask y HTML/CSS/JavaScript, permite un seguimiento fácil y seguro de los casos para apoyar la toma de decisiones.</p>
                         </div>
                     </div>
@@ -136,9 +153,11 @@
         </section>
         
         </section>
+        
 
         <section id="contact">
             <h2>Contacto y Redes Sociales</h2>
+
             <form id="contact-form" class="contact-form" action="https://formspree.io/f/xeoqorky" method="POST">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
@@ -151,6 +170,7 @@
                 
                 <button type="submit">Enviar</button>
             </form>
+
             <div class="contact-info">
                 <p><strong>Teléfono:</strong> +54 261 627 4292</p> 
                 <p><strong>Gmail:</strong>felipeomarpinaconesa@gmail.com</p>
