@@ -330,12 +330,14 @@ section#contact {
     header {
         padding: 10px;
         text-align: left;
+        position: relative; /* Asegura que el contenido no se sobreponga */
     }
 
     .menu-icon {
         font-size: 25px;
         top: 10px;
         left: 10px;
+        position: absolute; /* Para que no interfiera con el título */
     }
 
     .container {
@@ -346,20 +348,31 @@ section#contact {
         border-radius: 8px;
     }
 
+    /* Sobre mí: Se asegura que no cambie de color */
     .about-content {
         flex-direction: column;
         text-align: center;
         margin-bottom: 20px;
+        background-color: #b7d1f1; /* Asegura que el fondo sea consistente */
     }
 
     .about-photo img {
         width: 150px;
         height: 150px;
         margin-bottom: 10px;
+        object-fit: cover; /* Asegura que las imágenes no se deformen */
     }
 
     .about-text h3 {
         font-size: 18px;
+        color: #282c34;
+    }
+
+    /* Ajustes para las imágenes de los lenguajes */
+    .skill img {
+        width: 80%; /* Se adapta mejor al ancho disponible */
+        height: auto;
+        margin: 10px auto;
     }
 
     /* Ajustes para la sección de habilidades */
@@ -405,7 +418,7 @@ section#contact {
         margin: 10px 0;
     }
 
-    /* Contact Form Ajustes */
+    /* Formulario de contacto */
     .contact-form {
         max-width: 100%;
         padding: 15px;
@@ -434,12 +447,7 @@ section#contact {
         height: 30px;
     }
 
-    /* Opcional: mejor respuesta a pantallas más pequeñas */
-    section#about, section#skills, section#projects, section#contact {
-        padding: 10px;
-    }
-
-    /* Ajustar la barra lateral para dispositivos móviles */
+    /* Ajustar barra lateral para móviles */
     .sidenav {
         width: 0;
         height: 100%;
@@ -458,4 +466,12 @@ section#contact {
     .container, .about-content, .skills, .projects, .contact-form {
         box-sizing: border-box;
     }
+
+    /* Ajustar el fondo para que sea consistente en todo el portafolio */
+    section#about, section#skills, section#projects, section#contact {
+        padding: 10px;
+        background-color: #f4f4f4; /* Asegura un fondo más neutral */
+    }
+}
+
 }
