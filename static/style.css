@@ -323,23 +323,25 @@ section#contact {
 @media screen and (max-width: 768px) {
     body {
         font-size: 16px;
+        margin: 0;
+        padding: 0;
     }
 
     header {
-        padding: 15px;
+        padding: 10px;
         text-align: left;
     }
 
     .menu-icon {
         font-size: 25px;
-        top: 15px;
-        left: 15px;
+        top: 10px;
+        left: 10px;
     }
 
     .container {
         max-width: 100%;
         margin: 10px;
-        padding: 15px;
+        padding: 10px;
         background-color: #b7d1f1;
         border-radius: 8px;
     }
@@ -347,6 +349,7 @@ section#contact {
     .about-content {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .about-photo img {
@@ -359,9 +362,11 @@ section#contact {
         font-size: 18px;
     }
 
+    /* Ajustes para la sección de habilidades */
     .skills {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     .skill {
@@ -370,11 +375,19 @@ section#contact {
         text-align: center;
     }
 
+    /* Ajustes para la sección de proyectos */
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
     .project {
-        width: 100%;
+        width: 90%;
         margin: 10px 0;
         padding: 15px;
         box-shadow: none;
+        text-align: center;
     }
 
     .project-title {
@@ -392,6 +405,7 @@ section#contact {
         margin: 10px 0;
     }
 
+    /* Contact Form Ajustes */
     .contact-form {
         max-width: 100%;
         padding: 15px;
@@ -409,6 +423,7 @@ section#contact {
         padding: 12px;
     }
 
+    /* Iconos de redes sociales */
     .social-links {
         flex-direction: column;
         align-items: center;
@@ -421,7 +436,7 @@ section#contact {
 
     /* Opcional: mejor respuesta a pantallas más pequeñas */
     section#about, section#skills, section#projects, section#contact {
-        padding: 15px;
+        padding: 10px;
     }
 
     /* Ajustar la barra lateral para dispositivos móviles */
@@ -436,6 +451,11 @@ section#contact {
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+        box-sizing: border-box;
+    }
+
+    /* Evitar que el texto o los contenedores se desborden */
+    .container, .about-content, .skills, .projects, .contact-form {
         box-sizing: border-box;
     }
 }
